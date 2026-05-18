@@ -50,8 +50,8 @@
           <a href="#outfits" class="btn-primary">Crear outfit →</a>
         </td>
         <td style="width: 55%; padding: 0;">
-          <img src="img/hero-banner.jpg" alt="Nueva temporada" width="100%" height="480"
-            style="display:block; object-fit:cover; background:var(--hueso);">
+          <img src="img/hero-banner.jpg" alt="Nueva temporada" width="100%"
+            style="display:block; height:480px; object-fit:cover; background:var(--hueso);">
         </td>
       </tr>
     </table>
@@ -184,32 +184,32 @@
           <p style="font-size:12px; margin-bottom:10px; color:var(--texto-light); font-family:var(--font-sans);">Selecciona un color</p>
           <table border="0" cellspacing="6" cellpadding="0">
             <tr>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/1a1a1a/fff?text=+" alt="Negro" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;" title="Negro"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Negro</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/1c2b4a/fff?text=+" alt="Marino" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;" title="Marino"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Marino</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/4a4a2a/fff?text=+" alt="Oliva" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;" title="Oliva"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Oliva</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/6b4c2a/fff?text=+" alt="Cafe" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;" title="Cafe"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Cafe</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/3498db/fff?text=+" alt="Azul" width="32" height="32" style="border:2px solid #3498db; border-radius:4px;" title="Azul"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Azul</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/1a1a1a/fff?text=+" alt="Negro" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;" title="Negro"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Negro</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/1c2b4a/fff?text=+" alt="Marino" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;" title="Marino"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Marino</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/4a4a2a/fff?text=+" alt="Oliva" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;" title="Oliva"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Oliva</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/6b4c2a/fff?text=+" alt="Cafe" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;" title="Cafe"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Cafe</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/3498db/fff?text=+" alt="Azul" width="32" style="height:32px; border:2px solid #3498db; border-radius:4px;" title="Azul"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Azul</small></td>
             </tr>
             <tr>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/27ae60/fff?text=+" alt="Verde" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Verde</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/1a7a4a/fff?text=+" alt="Esmeralda" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Esmeralda</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/1abc9c/fff?text=+" alt="Turquesa" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Turquesa</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/c0392b/fff?text=+" alt="Rojo" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Rojo</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/e67e22/fff?text=+" alt="Naranja" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Naranja</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/27ae60/fff?text=+" alt="Verde" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Verde</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/1a7a4a/fff?text=+" alt="Esmeralda" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Esmeralda</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/1abc9c/fff?text=+" alt="Turquesa" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Turquesa</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/c0392b/fff?text=+" alt="Rojo" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Rojo</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/e67e22/fff?text=+" alt="Naranja" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Naranja</small></td>
             </tr>
             <tr>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/e0a020/fff?text=+" alt="Ambar" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Ambar</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/f1c40f/fff?text=+" alt="Amarillo" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Amarillo</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/9b59b6/fff?text=+" alt="Violeta" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Violeta</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/c39bd3/fff?text=+" alt="Lila" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Lila</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/f5f3ef/ccc?text=+" alt="Blanco" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Blanco</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/e0a020/fff?text=+" alt="Ambar" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Ambar</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/f1c40f/fff?text=+" alt="Amarillo" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Amarillo</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/9b59b6/fff?text=+" alt="Violeta" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Violeta</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/c39bd3/fff?text=+" alt="Lila" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Lila</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/f5f3ef/ccc?text=+" alt="Blanco" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Blanco</small></td>
             </tr>
             <tr>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/bdc3c7/fff?text=+" alt="Plata" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Plata</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/95a5a6/fff?text=+" alt="Gris" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Gris</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/f8f4ec/ccc?text=+" alt="Marfil" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Marfil</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/f4a460/fff?text=+" alt="Melocoton" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Melocoton</small></td>
-              <td><a href="#colores"><img src="https://placehold.co/32x32/fdf5e6/ccc?text=+" alt="Crema" width="32" height="32" style="border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Crema</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/bdc3c7/fff?text=+" alt="Plata" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Plata</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/95a5a6/fff?text=+" alt="Gris" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Gris</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/f8f4ec/ccc?text=+" alt="Marfil" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Marfil</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/f4a460/fff?text=+" alt="Melocoton" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Melocoton</small></td>
+              <td><a href="#colores"><img src="https://placehold.co/32x32/fdf5e6/ccc?text=+" alt="Crema" width="32" style="height:32px; border:0.5px solid var(--borde); border-radius:4px;"></a><br><small style="font-family:var(--font-sans); font-size:9px; letter-spacing:1px; color:var(--texto-light);">Crema</small></td>
             </tr>
           </table>
         </td>
@@ -225,11 +225,11 @@
           <p style="font-size:11px; color:var(--texto-light); margin:14px 0 8px; font-family:var(--font-sans); letter-spacing:1px; text-transform:uppercase;">Combina con</p>
           <table border="0" cellspacing="6" cellpadding="0">
             <tr>
-              <td><img src="https://placehold.co/40x40/e0a020/fff?text=+" alt="Ambar" width="40" height="40" style="border-radius:6px; border:0.5px solid var(--borde);"></td>
-              <td><img src="https://placehold.co/40x40/2c3e50/fff?text=+" alt="Marino" width="40" height="40" style="border-radius:6px; border:0.5px solid var(--borde);"></td>
-              <td><img src="https://placehold.co/40x40/bdc3c7/fff?text=+" alt="Plata" width="40" height="40" style="border-radius:6px; border:0.5px solid var(--borde);"></td>
-              <td><img src="https://placehold.co/40x40/2c3e50/fff?text=+" alt="Oscuro" width="40" height="40" style="border-radius:6px; border:0.5px solid var(--borde);"></td>
-              <td><img src="https://placehold.co/40x40/f5f3ef/ccc?text=+" alt="Blanco" width="40" height="40" style="border-radius:6px; border:0.5px solid var(--borde);"></td>
+              <td><img src="https://placehold.co/40x40/e0a020/fff?text=+" alt="Ambar" width="40" style="height:40px; border-radius:6px; border:0.5px solid var(--borde);"></td>
+              <td><img src="https://placehold.co/40x40/2c3e50/fff?text=+" alt="Marino" width="40" style="height:40px; border-radius:6px; border:0.5px solid var(--borde);"></td>
+              <td><img src="https://placehold.co/40x40/bdc3c7/fff?text=+" alt="Plata" width="40" style="height:40px; border-radius:6px; border:0.5px solid var(--borde);"></td>
+              <td><img src="https://placehold.co/40x40/2c3e50/fff?text=+" alt="Oscuro" width="40" style="height:40px; border-radius:6px; border:0.5px solid var(--borde);"></td>
+              <td><img src="https://placehold.co/40x40/f5f3ef/ccc?text=+" alt="Blanco" width="40" style="height:40px; border-radius:6px; border:0.5px solid var(--borde);"></td>
             </tr>
           </table>
 
@@ -244,44 +244,44 @@
           <table border="0" cellspacing="14" cellpadding="0" width="100%" style="margin-top:18px;">
             <tr>
               <td width="25%" valign="top">
-                <img src="img/prendas/camisa-lino.jpg" alt="Camisa Oxford" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:6px;">
+                <img src="img/prendas/camisa-lino.jpg" alt="Camisa Oxford" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:6px;">
                 <p class="product-name">Camisa Oxford</p>
                 <p><a href="#prendas" class="link-ver">Ver →</a></p>
               </td>
               <td width="25%" valign="top">
-                <img src="img/prendas/blazer-crudo.jpeg" alt="Blazer" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:6px;">
+                <img src="img/prendas/blazer-crudo.jpeg" alt="Blazer" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:6px;">
                 <p class="product-name">Blazer</p>
                 <p><a href="#prendas" class="link-ver">Ver →</a></p>
               </td>
               <td width="25%" valign="top">
-                <img src="img/prendas/vestido-midi.jpg" alt="Vestido Midi" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:6px;">
+                <img src="img/prendas/vestido-midi.jpg" alt="Vestido Midi" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:6px;">
                 <p class="product-name">Vestido Midi</p>
                 <p><a href="#prendas" class="link-ver">Ver →</a></p>
               </td>
               <td width="25%" valign="top">
-                <img src="img/prendas/top-tejido.jpeg" alt="Camiseta" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:6px;">
+                <img src="img/prendas/top-tejido.jpeg" alt="Camiseta" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:6px;">
                 <p class="product-name">Camiseta</p>
                 <p><a href="#prendas" class="link-ver">Ver →</a></p>
               </td>
             </tr>
             <tr>
               <td width="25%" valign="top">
-                <img src="img/prendas/pantalon-wide.jpg" alt="Pantalon" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:6px;">
+                <img src="img/prendas/pantalon-wide.jpg" alt="Pantalon" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:6px;">
                 <p class="product-name">Pantalon</p>
                 <p><a href="#prendas" class="link-ver">Ver →</a></p>
               </td>
               <td width="25%" valign="top">
-                <img src="img/guardarropa/jeans-rectos.jpg" alt="Jeans" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:6px;">
+                <img src="img/guardarropa/jeans-rectos.jpg" alt="Jeans" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:6px;">
                 <p class="product-name">Jeans</p>
                 <p><a href="#prendas" class="link-ver">Ver →</a></p>
               </td>
               <td width="25%" valign="top">
-                <img src="img/prendas/falda-plisada.jpg" alt="Falda" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:6px;">
+                <img src="img/prendas/falda-plisada.jpg" alt="Falda" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:6px;">
                 <p class="product-name">Falda</p>
                 <p><a href="#prendas" class="link-ver">Ver →</a></p>
               </td>
               <td width="25%" valign="top">
-                <img src="img/prendas/trench.jpg" alt="Chaqueta" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:6px;">
+                <img src="img/prendas/trench.jpg" alt="Chaqueta" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:6px;">
                 <p class="product-name">Chaqueta</p>
                 <p><a href="#prendas" class="link-ver">Ver →</a></p>
               </td>
@@ -295,19 +295,19 @@
           <table border="0" cellspacing="10" cellpadding="0" width="100%">
             <tr>
               <td>
-                <img src="img/colores/look-azul-01.jpg" alt="Look 01" width="100%" height="140" style="display:block; object-fit:cover; background:var(--hueso); border-radius:8px;">
+                <img src="img/colores/look-azul-01.jpg" alt="Look 01" width="100%" style="display:block; height:140px; object-fit:cover; background:var(--hueso); border-radius:8px;">
                 <p style="font-size:11px; font-style:italic; color:var(--texto-light); margin-top:6px; font-family:var(--font-sans);">Look 01</p>
               </td>
             </tr>
             <tr>
               <td>
-                <img src="img/colores/look-azul2.jpg" alt="Look 02" width="100%" height="140" style="display:block; object-fit:cover; background:var(--hueso); border-radius:8px;">
+                <img src="img/colores/look-azul2.jpg" alt="Look 02" width="100%" style="display:block; height:140px; object-fit:cover; background:var(--hueso); border-radius:8px;">
                 <p style="font-size:11px; font-style:italic; color:var(--texto-light); margin-top:6px; font-family:var(--font-sans);">Look 02</p>
               </td>
             </tr>
             <tr>
               <td>
-                <img src="img/colores/look-azul-03.jpg" alt="Look 03" width="100%" height="140" style="display:block; object-fit:cover; background:var(--hueso); border-radius:8px;">
+                <img src="img/colores/look-azul-03.jpg" alt="Look 03" width="100%" style="display:block; height:140px; object-fit:cover; background:var(--hueso); border-radius:8px;">
                 <p style="font-size:11px; font-style:italic; color:var(--texto-light); margin-top:6px; font-family:var(--font-sans);">Look 03</p>
               </td>
             </tr>
@@ -344,8 +344,8 @@
     <table border="0" width="100%" cellspacing="0" cellpadding="0" style="margin-top:24px;">
       <tr>
         <td width="55%">
-          <img src="img/tendencias/quiet-luxury.jpg" alt="Quiet Luxury" width="100%" height="360"
-            style="display:block; object-fit:cover; background:var(--hueso); border-radius:var(--radius-md);">
+          <img src="img/tendencias/quiet-luxury.jpg" alt="Quiet Luxury" width="100%"
+            style="display:block; height:360px; object-fit:cover; background:var(--hueso); border-radius:var(--radius-md);">
         </td>
         <td valign="top" style="padding-left:40px;">
           <span class="badge-emergente">Emergente</span>
@@ -372,27 +372,27 @@
     <table border="0" cellspacing="18" cellpadding="0" width="100%">
       <tr>
         <td width="20%" valign="top">
-          <img src="img/tendencias/coastal.jpeg" alt="Coastal" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">
+          <img src="img/tendencias/coastal.jpeg" alt="Coastal" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">
           <p class="product-name">Coastal</p>
           <p><span class="badge-emergente">Emergente</span> &nbsp; <a href="#tendencias" class="link-ver">→</a></p>
         </td>
         <td width="20%" valign="top">
-          <img src="img/tendencias/tono-tierra.jpeg" alt="Tono Tierra" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">
+          <img src="img/tendencias/tono-tierra.jpeg" alt="Tono Tierra" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">
           <p class="product-name">Tono Tierra</p>
           <p><span class="badge-fija">Fija</span> &nbsp; <a href="#tendencias" class="link-ver">→</a></p>
         </td>
         <td width="20%" valign="top">
-          <img src="img/tendencias/ballet-core.jpeg" alt="Ballet Core" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">
+          <img src="img/tendencias/ballet-core.jpeg" alt="Ballet Core" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">
           <p class="product-name">Ballet Core</p>
           <p><span class="badge-emergente">Emergente</span> &nbsp; <a href="#tendencias" class="link-ver">→</a></p>
         </td>
         <td width="20%" valign="top">
-          <img src="img/tendencias/business.jpg" alt="Business" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">
+          <img src="img/tendencias/business.jpg" alt="Business" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">
           <p class="product-name">Business</p>
           <p><span class="badge-fija">Fija</span> &nbsp; <a href="#tendencias" class="link-ver">→</a></p>
         </td>
         <td width="20%" valign="top">
-          <img src="img/tendencias/dark-academia.jpeg" alt="Dark Academia" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">
+          <img src="img/tendencias/dark-academia.jpeg" alt="Dark Academia" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">
           <p class="product-name">Dark Academia</p>
           <p><span class="badge-fija">Fija</span> &nbsp; <a href="#tendencias" class="link-ver">→</a></p>
         </td>
@@ -490,7 +490,7 @@
             echo '<tr>';
             foreach ($fila as $p) {
               echo '<td width="25%" valign="top">';
-              echo '<img src="'.$p[1].'" alt="'.$p[0].'" width="100%" height="200" style="display:block; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">';
+              echo '<img src="'.$p[1].'" alt="'.$p[0].'" width="100%" style="display:block; height:200px; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">';
               echo '<p class="product-name">'.$p[0].'</p>';
               echo '<p class="product-price" style="font-size:13px;">$ — — —</p>';
               echo '<a href="#prendas" class="btn-prenda">Ver prenda</a>';
@@ -548,8 +548,8 @@
             <tr>
               <?php foreach ($par as $item): ?>
               <td width="50%" style="cursor:grab;">
-                <img src="<?= $item[1] ?>" alt="<?= $item[0] ?>" width="100%" height="64"
-                  style="display:block; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm); border:0.5px solid var(--borde);">
+                <img src="<?= $item[1] ?>" alt="<?= $item[0] ?>" width="100%"
+                  style="display:block; height:64px; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm); border:0.5px solid var(--borde);">
                 <p style="font-size:10px; margin-top:4px; font-family:var(--font-sans); color:var(--texto-med);"><?= $item[0] ?></p>
               </td>
               <?php endforeach; ?>
@@ -563,7 +563,7 @@
         <td valign="top" style="padding:0 20px;">
           <p style="font-family:var(--font-sans); font-size:9px; letter-spacing:2px; text-transform:uppercase; color:var(--oliva); margin-bottom:14px; font-weight:bold;">CANVAS</p>
           <div style="background:var(--hueso-med); border:0.5px solid var(--borde); border-radius:var(--radius-md); padding:28px; text-align:center; min-height:500px;">
-            <img src="img/logo/logo-jaguar.png" alt="figura" width="36" height="36" style="border-radius:50%; margin:0 auto 8px; border:0.5px solid var(--borde);">
+            <img src="img/logo/logo-jaguar.png" alt="figura" width="36" style="height:36px; border-radius:50%; margin:0 auto 8px; border:0.5px solid var(--borde);">
             <div style="background:rgba(255,255,255,0.5); border:1px dashed var(--borde-med); width:160px; height:180px; margin:8px auto; display:flex; align-items:center; justify-content:center; border-radius:var(--radius-sm);">
               <p style="font-size:11px; color:var(--texto-light); font-family:var(--font-sans);">Superior</p>
             </div>
@@ -608,11 +608,11 @@
             <p style="font-family:var(--font-sans); font-size:9px; letter-spacing:2px; text-transform:uppercase; color:var(--oliva); margin-top:18px; margin-bottom:8px; font-weight:bold;">Paleta sugerida</p>
             <table border="0" cellspacing="5" cellpadding="0">
               <tr>
-                <td><img src="https://placehold.co/30x30/f5f3ef/ccc?text=+" alt="" width="30" height="30" style="border-radius:50%; border:0.5px solid var(--borde);"></td>
-                <td><img src="https://placehold.co/30x30/4a4a2a/fff?text=+" alt="" width="30" height="30" style="border-radius:50%;"></td>
-                <td><img src="https://placehold.co/30x30/7a7550/fff?text=+" alt="" width="30" height="30" style="border-radius:50%;"></td>
-                <td><img src="https://placehold.co/30x30/c0603a/fff?text=+" alt="" width="30" height="30" style="border-radius:50%;"></td>
-                <td><img src="https://placehold.co/30x30/2c3e50/fff?text=+" alt="" width="30" height="30" style="border-radius:50%;"></td>
+                <td><img src="https://placehold.co/30x30/f5f3ef/ccc?text=+" alt="" width="30" style="height:30px; border-radius:50%; border:0.5px solid var(--borde);"></td>
+                <td><img src="https://placehold.co/30x30/4a4a2a/fff?text=+" alt="" width="30" style="height:30px; border-radius:50%;"></td>
+                <td><img src="https://placehold.co/30x30/7a7550/fff?text=+" alt="" width="30" style="height:30px; border-radius:50%;"></td>
+                <td><img src="https://placehold.co/30x30/c0603a/fff?text=+" alt="" width="30" style="height:30px; border-radius:50%;"></td>
+                <td><img src="https://placehold.co/30x30/2c3e50/fff?text=+" alt="" width="30" style="height:30px; border-radius:50%;"></td>
               </tr>
             </table>
 
@@ -690,7 +690,7 @@
       echo '<tr>';
       foreach ($fila as $p) {
         echo '<td width="16%" valign="top">';
-        echo '<img src="'.$p[1].'" alt="'.$p[0].'" width="100%" height="180" style="display:block; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">';
+        echo '<img src="'.$p[1].'" alt="'.$p[0].'" width="100%" style="display:block; height:180px; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">';
         echo '<p class="product-name">'.$p[0].' ♥</p>';
         echo '<a href="#outfits" class="link-ver" style="font-size:10px;">Crear outfit →</a>';
         echo '</td>';
@@ -747,7 +747,7 @@
       foreach ($fila as $p) {
         echo '<td width="25%" valign="top">';
         if ($p[4]) echo '<span class="discount-badge" style="margin-bottom:6px; display:inline-block;">-20%</span>';
-        echo '<img src="'.$p[1].'" alt="'.$p[0].'" width="100%" height="240" style="display:block; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">';
+        echo '<img src="'.$p[1].'" alt="'.$p[0].'" width="100%" style="display:block; height:240px; object-fit:cover; background:var(--hueso); border-radius:var(--radius-sm);">';
         echo '<p class="product-name">'.$p[0].'</p>';
         echo '<p class="product-brand">'.$p[2].'</p>';
         echo '<p class="product-price">'.$p[3].'</p>';
@@ -770,8 +770,8 @@
     <table border="0" width="100%" cellspacing="0" cellpadding="0" style="margin-bottom:48px;">
       <tr>
         <td width="35%" align="center">
-          <img src="img/logo/logo-jaguar.png" alt="Thread logo" width="280" height="300"
-            style="display:block; object-fit:contain; background:var(--hueso); border-radius:var(--radius-md); margin:0 auto;">
+          <img src="img/logo/logo-jaguar.png" alt="Thread logo" width="280"
+            style="display:block; height:300px; object-fit:contain; background:var(--hueso); border-radius:var(--radius-md); margin:0 auto;">
         </td>
         <td valign="middle" style="padding-left:48px;">
           <span class="section-label">Nuestra historia</span>
