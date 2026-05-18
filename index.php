@@ -44,12 +44,12 @@
 
     <table class="hero-table" border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td>
+        <td style="padding: 64px 40px 64px 56px; width: 45%;">
           <h1>Descubre<br><em>tu estilo.</em></h1>
           <p>Explora por color, prenda o tendencia. Thread te ayuda a construir outfits que hablen de quién eres.</p>
           <a href="#outfits" class="btn-primary">Crear outfit →</a>
         </td>
-        <td>
+        <td style="width: 55%; padding: 0;">
           <img src="img/hero-banner.jpg" alt="Nueva temporada" width="100%" height="480"
             style="display:block; object-fit:cover; background:var(--hueso);">
         </td>
