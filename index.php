@@ -9,99 +9,194 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="estilo.css">
   <style>
-    /* ── Contenedores parejos globales ── */
+    /* ══════════════════════════════════════
+       LAYOUT — CONTENEDORES PAREJOS
+       Todos los tamaños coinciden con el
+       comportamiento original de las tablas.
+    ══════════════════════════════════════ */
 
-    /* Hero */
+    /* ── Hero ──────────────────────────── */
     .hero-flex {
       display: flex;
-      gap: 0;
+      width: 100%;
       align-items: stretch;
     }
-    .hero-flex > .hero-text {
-      flex: 1 1 50%;
+    .hero-flex .hero-text {
+      /* ocupa el 50 % izquierdo, igual que td width="50%" */
+      flex: 0 0 50%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 48px 48px 48px 0;
+      /* padding original de la sección menos el del section */
+      padding: 0 56px 0 0;
     }
-    .hero-flex > .hero-img {
-      flex: 1 1 50%;
+    .hero-flex .hero-img {
+      flex: 0 0 50%;
+      width: 50%;
     }
-    .hero-flex > .hero-img img {
+    .hero-flex .hero-img img {
       width: 100%;
-      height: 480px;
+      height: 480px;     /* height="480" original */
       object-fit: cover;
       display: block;
     }
 
-    /* Tira de colores */
+    /* ── Tira de colores ───────────────── */
     .color-strip-flex {
       display: flex;
-      height: 40px;
+      width: 100%;
+      height: 46px;      /* altura original de .color-strip td */
     }
     .color-strip-flex > div {
-      flex: 1;
+      flex: 1 1 0;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: var(--font-sans);
+      font-size: 9px;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
     }
 
-    /* Grid de cards (tendencias, prendas, guardarropa, tienda) */
-    .card-grid-4 {
+    /* ── Grids de cards ────────────────── */
+    /*  Las celdas replican el comportamiento de
+        .card-grid td (background, border, radius, hover)   */
+    .card-grid-4,
+    .card-grid-5,
+    .card-grid-6,
+    .card-grid-8 {
       display: grid;
+      width: 100%;
+    }
+    .card-grid-4 {
       grid-template-columns: repeat(4, 1fr);
-      gap: 22px;
+      gap: 22px;         /* border-spacing original */
       margin-top: 28px;
     }
     .card-grid-5 {
-      display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 18px;
       margin-top: 22px;
     }
     .card-grid-6 {
-      display: grid;
       grid-template-columns: repeat(6, 1fr);
       gap: 14px;
     }
     .card-grid-8 {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr);  /* 2 filas × 4 col = 8 items */
       gap: 18px;
     }
 
-    /* Sección Colores: sidebar-left + content + sidebar-right */
+    /* Heredar estilos de card del CSS original (.card-grid td) */
+    .card-grid-4 > div,
+    .card-grid-5 > div,
+    .card-grid-6 > div,
+    .card-grid-8 > div {
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: blur(6px);
+      border: 0.5px solid rgba(212,207,199,0.7);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-grid-4 > div:hover,
+    .card-grid-5 > div:hover,
+    .card-grid-6 > div:hover,
+    .card-grid-8 > div:hover {
+      transform: translateY(-4px);
+      border-color: var(--borde-med);
+      box-shadow: var(--shadow-hover);
+    }
+    /* Imágenes dentro de cards: igual que .card-grid td img */
+    .card-grid-4 > div img,
+    .card-grid-5 > div img,
+    .card-grid-6 > div img,
+    .card-grid-8 > div img {
+      transition: transform .7s cubic-bezier(.19,1,.22,1), filter .5s ease;
+    }
+    .card-grid-4 > div:hover img,
+    .card-grid-5 > div:hover img,
+    .card-grid-6 > div:hover img,
+    .card-grid-8 > div:hover img {
+      transform: scale(1.035);
+      filter: contrast(1.03) saturate(1.02);
+    }
+    /* Textos y botones dentro de las cards con padding */
+    .card-grid-4 > div .product-name,
+    .card-grid-5 > div .product-name,
+    .card-grid-6 > div .product-name,
+    .card-grid-8 > div .product-name {
+      padding: 0 14px;
+      margin-top: 12px;
+    }
+    .card-grid-4 > div .product-price,
+    .card-grid-8 > div .product-price { padding: 0 14px; }
+    .card-grid-4 > div .btn-prenda,
+    .card-grid-8 > div .btn-prenda,
+    .card-grid-4 > div .btn-shop,
+    .card-grid-8 > div .btn-shop { margin: 8px 14px 14px; display: inline-block; }
+    .card-grid-4 > div .link-ver,
+    .card-grid-5 > div .link-ver,
+    .card-grid-6 > div .link-ver { padding: 0 14px 14px; display: inline-block; }
+    /* badge dentro de tienda */
+    .card-grid-8 > div .discount-badge { margin: 8px 14px 0; }
+
+    /* ── card-img (imagen de tendencias home) preserva altura ── */
+    .card-grid-4 .card-img {
+      height: 320px;     /* igual que .card-img en estilo.css */
+      overflow: hidden;
+    }
+    .card-grid-4 .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ── Sección Colores ───────────────── */
     .colores-layout {
       display: flex;
-      gap: 0;
+      width: 100%;
       align-items: flex-start;
     }
+    /* sidebar izquierdo: width="200" original */
     .colores-layout .sidebar-paleta {
+      flex: 0 0 200px;
       width: 200px;
-      flex-shrink: 0;
       padding-right: 32px;
     }
+    /* contenido central: ocupa el resto */
     .colores-layout .colores-content {
-      flex: 1;
+      flex: 1 1 0;
       min-width: 0;
     }
+    /* sidebar derecho: width="240" original */
     .colores-layout .sidebar-looks {
+      flex: 0 0 240px;
       width: 240px;
-      flex-shrink: 0;
       padding-left: 28px;
     }
 
-    /* Paleta de colores (grid 5 cols) */
+    /* Paleta: 5 columnas de 32 px c/u + gap 6 */
     .paleta-grid {
       display: grid;
       grid-template-columns: repeat(5, 32px);
       gap: 6px;
+      margin-top: 10px;
     }
     .paleta-grid .paleta-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 2px;
+    }
+    .paleta-grid .paleta-item img {
+      width: 32px;
+      height: 32px;
+      display: block;
     }
 
     /* Combina-con */
@@ -111,83 +206,13 @@
       flex-wrap: wrap;
       margin-top: 8px;
     }
-
-    /* Tendencia destacada */
-    .tendencia-destacada {
-      display: flex;
-      gap: 0;
-      align-items: flex-start;
-      margin-top: 24px;
-    }
-    .tendencia-destacada .td-img {
-      flex: 0 0 55%;
-    }
-    .tendencia-destacada .td-img img {
-      width: 100%;
-      height: 360px;
-      object-fit: cover;
-      border-radius: var(--radius-md, 8px);
-      display: block;
-    }
-    .tendencia-destacada .td-info {
-      flex: 1;
-      padding-left: 40px;
-    }
-
-    /* Sección Prendas: sidebar filtros + grid */
-    .prendas-layout {
-      display: flex;
-      gap: 0;
-      align-items: flex-start;
-    }
-    .prendas-layout .sidebar-filtros {
-      width: 200px;
+    .combina-con img {
+      width: 40px;
+      height: 40px;
       flex-shrink: 0;
-      padding-right: 28px;
-    }
-    .prendas-layout .prendas-content {
-      flex: 1;
-      min-width: 0;
     }
 
-    /* Outfit Builder: panel-prendas + canvas + panel-ia */
-    .outfit-layout {
-      display: flex;
-      gap: 0;
-      align-items: flex-start;
-    }
-    .outfit-layout .outfit-panel {
-      width: 260px;
-      flex-shrink: 0;
-      padding-right: 24px;
-    }
-    .outfit-layout .outfit-canvas {
-      flex: 1;
-      min-width: 0;
-      padding: 0 20px;
-    }
-    .outfit-layout .outfit-ia {
-      width: 280px;
-      flex-shrink: 0;
-      padding-left: 20px;
-    }
-
-    /* Grid prendas dentro del panel */
-    .panel-prendas-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 6px;
-    }
-    .panel-prenda-item img {
-      width: 100%;
-      height: 64px;
-      object-fit: cover;
-      border-radius: var(--radius-sm, 4px);
-      border: 0.5px solid var(--borde);
-      display: block;
-    }
-
-    /* Looks en sidebar derecho */
+    /* Looks sidebar */
     .looks-stack {
       display: flex;
       flex-direction: column;
@@ -195,79 +220,21 @@
     }
     .looks-stack img {
       width: 100%;
-      height: 140px;
+      height: 140px;     /* height="140" original */
       object-fit: cover;
       border-radius: 8px;
       display: block;
     }
 
-    /* Guardarropa stats */
-    .guardarropa-header {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      margin-bottom: 28px;
+    /* Grid central de colores: 4 col × 2 filas */
+    .colores-content .card-grid-4 {
+      margin-top: 18px;
     }
-    .stats-row {
-      display: flex;
-      gap: 0;
-    }
-    .stat-cell {
-      padding: 0 24px;
-      text-align: center;
+    .colores-content .card-grid-4 > div img {
+      height: 180px;
     }
 
-    /* Nosotros: logo + texto */
-    .nosotros-hero {
-      display: flex;
-      gap: 0;
-      align-items: center;
-      margin-bottom: 48px;
-    }
-    .nosotros-hero .nos-logo {
-      flex: 0 0 35%;
-      display: flex;
-      justify-content: center;
-    }
-    .nosotros-hero .nos-text {
-      flex: 1;
-      padding-left: 48px;
-    }
-
-    /* Valores grid */
-    .valores-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    /* Misión-Visión-Propósito */
-    .mvp-row {
-      display: flex;
-      gap: 0;
-      border-top: 0.5px solid var(--borde);
-      padding-top: 28px;
-      margin-top: 48px;
-    }
-    .mvp-row .mvp-cell {
-      flex: 1;
-      padding: 0 24px;
-    }
-    .mvp-row .mvp-cell:first-child { padding-left: 0; }
-    .mvp-row .mvp-cell:last-child  { padding-right: 0; }
-
-    /* Footer */
-    .footer-flex {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .footer-flex nav {
-      display: flex;
-      gap: 20px;
-    }
-
-    /* Tendencias header row */
+    /* ── Tendencias ────────────────────── */
     .tendencias-header {
       display: flex;
       align-items: flex-end;
@@ -275,31 +242,121 @@
       margin-bottom: 16px;
     }
 
-    /* Tienda filter row */
-    .tienda-filter-row {
+    /* Tendencia destacada: td width="55%" original */
+    .tendencia-destacada {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 18px;
+      width: 100%;
+      align-items: flex-start;
+      margin-top: 24px;
+    }
+    .tendencia-destacada .td-img {
+      flex: 0 0 55%;
+      width: 55%;
+    }
+    .tendencia-destacada .td-img img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      display: block;
+    }
+    .tendencia-destacada .td-info {
+      flex: 1 1 0;
+      min-width: 0;
+      padding-left: 40px;
     }
 
-    /* Prendas filter/sort row */
+    /* Botones dentro de td-info */
+    .tendencia-destacada .td-info > div {
+      display: flex;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    /* ── Prendas ───────────────────────── */
     .prendas-filter-row {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: space-between;
       margin-bottom: 16px;
     }
-
-    /* Guardarropa tabs row */
-    .guardarropa-tabs-row {
+    .prendas-layout {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 22px;
+      width: 100%;
+      align-items: flex-start;
+    }
+    /* sidebar: width="220" de .sidebar en estilo.css */
+    .prendas-layout .sidebar-filtros {
+      flex: 0 0 220px;
+      width: 220px;
+      padding-right: 40px;  /* padding-right de .sidebar */
+    }
+    .prendas-layout .prendas-content {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+    /* Las cards de prendas no tienen el fondo blanco, son planas */
+    .prendas-layout .card-grid-4 > div {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+    .prendas-layout .card-grid-4 > div:hover {
+      transform: none;
+      box-shadow: none;
+      border-color: transparent;
+    }
+    .prendas-layout .card-grid-4 > div img {
+      height: 200px;
+      border-radius: var(--radius-sm);
+    }
+    .prendas-layout .card-grid-4 > div .product-name,
+    .prendas-layout .card-grid-4 > div .product-price,
+    .prendas-layout .card-grid-4 > div .btn-prenda { padding-left: 0; padding-right: 0; }
+
+    /* ── Outfit Builder ────────────────── */
+    .outfit-layout {
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+    }
+    /* panel izquierdo: width="260" original */
+    .outfit-layout .outfit-panel {
+      flex: 0 0 260px;
+      width: 260px;
+      padding-right: 24px;
+    }
+    /* canvas: ocupa el resto */
+    .outfit-layout .outfit-canvas {
+      flex: 1 1 0;
+      min-width: 0;
+      padding: 0 20px;
+    }
+    /* panel IA: width="280" original */
+    .outfit-layout .outfit-ia {
+      flex: 0 0 280px;
+      width: 280px;
+      padding-left: 20px;
     }
 
-    /* Canvas action row */
+    /* Grid 2×2 dentro del panel de prendas */
+    .panel-prendas-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+    .panel-prenda-item img {
+      width: 100%;
+      height: 64px;      /* height="64" original */
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      border: 0.5px solid var(--borde);
+      display: block;
+    }
+
+    /* Acciones debajo del canvas */
     .canvas-actions {
       display: flex;
       justify-content: space-between;
@@ -311,13 +368,125 @@
       gap: 10px;
     }
 
-    /* Colores filter tabs row */
-    .colores-filter-row {
-      margin-top: 18px;
+    /* ── Guardarropa ───────────────────── */
+    .guardarropa-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+    .stats-row {
+      display: flex;
+    }
+    /* cellpadding="24" original → padding horizontal en cada stat */
+    .stat-cell {
+      padding: 0 24px;
+      text-align: center;
+    }
+    .guardarropa-tabs-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 22px;
+    }
+    /* Las cards de guardarropa son planas (sin fondo blanco) */
+    .card-grid-6 > div {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+    .card-grid-6 > div:hover {
+      transform: none;
+      box-shadow: none;
+      border-color: transparent;
+    }
+    .card-grid-6 > div img {
+      height: 180px;     /* height="180" original */
+      border-radius: var(--radius-sm);
+    }
+    .card-grid-6 > div .product-name,
+    .card-grid-6 > div .link-ver { padding-left: 0; }
+
+    /* ── Tienda ────────────────────────── */
+    .tienda-filter-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+    /* Las cards de tienda sí llevan fondo blanco pero sin el hover de position */
+    .card-grid-8 > div img {
+      height: 240px;     /* height="240" original */
+      border-radius: var(--radius-sm);
     }
 
-    /* Responsive básico */
+    /* ── Nosotros ──────────────────────── */
+    /* Logo + texto: td width="35%" original */
+    .nosotros-hero {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+    .nosotros-hero .nos-logo {
+      flex: 0 0 35%;
+      width: 35%;
+      display: flex;
+      justify-content: center;
+    }
+    .nosotros-hero .nos-logo img {
+      width: 280px;
+      height: 300px;
+      object-fit: contain;
+      background: var(--hueso);
+      border-radius: var(--radius-md);
+    }
+    .nosotros-hero .nos-text {
+      flex: 1 1 0;
+      min-width: 0;
+      padding-left: 48px;
+    }
+
+    /* Valores: 4 columnas iguales, gap 18 */
+    .valores-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    /* Misión-Visión-Propósito: 3 col iguales, padding="0 24px" original */
+    .mvp-row {
+      display: flex;
+      width: 100%;
+      border-top: 0.5px solid var(--borde);
+      padding-top: 28px;
+      margin-top: 48px;
+    }
+    .mvp-row .mvp-cell {
+      flex: 1 1 0;
+      padding: 0 24px;
+    }
+    .mvp-row .mvp-cell:first-child { padding-left: 0; }
+    .mvp-row .mvp-cell:last-child  { padding-right: 0; }
+
+    /* ── Footer ────────────────────────── */
+    .footer-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-flex nav {
+      display: flex;
+      gap: 0;   /* los enlaces ya tienen margin: 0 10px en estilo.css */
+    }
+
+    /* ══════════════════════════════════════
+       RESPONSIVE — ≤ 900 px
+    ══════════════════════════════════════ */
     @media (max-width: 900px) {
+      /* Layouts en columna */
       .hero-flex,
       .colores-layout,
       .tendencia-destacada,
@@ -327,21 +496,56 @@
       .mvp-row {
         flex-direction: column;
       }
+
+      /* Sidebars a ancho completo */
+      .hero-flex .hero-text,
+      .hero-flex .hero-img,
       .colores-layout .sidebar-paleta,
+      .colores-layout .colores-content,
       .colores-layout .sidebar-looks,
       .prendas-layout .sidebar-filtros,
+      .prendas-layout .prendas-content,
       .outfit-layout .outfit-panel,
+      .outfit-layout .outfit-canvas,
       .outfit-layout .outfit-ia,
-      .nosotros-hero .nos-logo {
+      .nosotros-hero .nos-logo,
+      .nosotros-hero .nos-text {
+        flex: none;
         width: 100%;
-        padding: 0 0 20px;
+        padding-left: 0;
+        padding-right: 0;
       }
+      .hero-flex .hero-text { padding-bottom: 24px; }
+      .outfit-layout .outfit-canvas { padding: 24px 0; }
+
+      /* Grids a 2 columnas */
+      .card-grid-4,
+      .card-grid-5,
+      .card-grid-8 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .card-grid-6 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .valores-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      /* Stats en fila con scroll */
+      .guardarropa-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .footer-flex { flex-direction: column; gap: 20px; text-align: center; }
+    }
+
+    @media (max-width: 520px) {
       .card-grid-4,
       .card-grid-5,
       .card-grid-6,
       .card-grid-8,
       .valores-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+      }
+      .paleta-grid {
+        grid-template-columns: repeat(4, 32px);
       }
     }
   </style>
